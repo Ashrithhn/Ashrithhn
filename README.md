@@ -5,7 +5,7 @@
 To show your photo:
 1. Add an image file (e.g. profile.jpg) to this repo.
 2. Replace PHOTO_URL_HERE with the raw URL of that image, for example:
-   https://github.com/Ashrithhn/Ashrithhn/blob/main/profile.jpg?raw=1
+  [ https://github.com/Ashrithhn/Ashrithhn/blob/main/profile.jpg?raw=1](https://github.com/Ashrithhn/Ashrithhn/blob/main/profile-photo.jpeg)
 Then uncomment the <img> block below.
 -->
 
