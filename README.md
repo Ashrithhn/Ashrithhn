@@ -1,9 +1,11 @@
 <!-- Profile README for github.com/Ashrithhn -->
 
-<p align="center">
+<!-- <p align="center">
   <img src="https://github.com/Ashrithhn/Ashrithhn/blob/main/profile-photo.jpeg?raw=1" 
        alt="Ashrith H N" width="150" style="border-radius: 50%;" />
-</p>
+</p> -->
+<img align="right" width="400" alt="coding" src="https://github.com/Ashrithhn/Ashrithhn/blob/main/profile-photo.jpeg?raw=1"></img>
+
 
 <h1 align="center">Hi 👋, I'm Ashrith H N</h1>
 <h3 align="center">Enthusiastic CSE student building web apps & tools.</h3>
