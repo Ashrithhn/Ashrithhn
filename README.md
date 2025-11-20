@@ -4,7 +4,7 @@
   <img src="https://github.com/Ashrithhn/Ashrithhn/blob/main/profile-photo.jpeg?raw=1" 
        alt="Ashrith H N" width="150" style="border-radius: 50%;" />
 </p> -->
-<img align="right" width="400" alt="coding" src="https://github.com/Ashrithhn/Ashrithhn/blob/main/profile-photo.jpeg?raw=1"></img>
+<img align="right" width="400" alt="coding" src="[https://github.com/Ashrithhn/Ashrithhn/blob/main/profile-photo.jpeg?raw=1](https://github.com/Ashrithhn/Ashrithhn/blob/main/github-header-banner.png)"></img>
 
 
 <h1 align="center">Hi 👋, I'm Ashrith H N</h1>
