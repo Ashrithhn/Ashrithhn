@@ -1,10 +1,3 @@
-<!-- Profile README for github.com/Ashrithhn -->
-
-<!-- <p align="center">
-  <img src="https://github.com/Ashrithhn/Ashrithhn/blob/main/profile-photo.jpeg?raw=1" 
-       alt="Ashrith H N" width="150" style="border-radius: 50%;" />
-</p> -->
- 
 <img align="right" width="1600" height="400" alt="coding"
 src="https://github.com/Ashrithhn/Ashrithhn/blob/main/github-header-banner.png?raw=1" />
 
@@ -32,11 +25,11 @@ src="https://github.com/Ashrithhn/Ashrithhn/blob/main/github-header-banner.png?r
 
 ## ⚡ About Me
 
-- 🎓 B.E. Computer Science – Govt. Engineering College Mosalehosahalli (VTU)
-- 💻 Interested in **full-stack development** & **backend systems**
-- 🛡️ Exploring **cybersecurity, honeypots, threat monitoring & analytics**
-- 🐳 Practicing **Docker** and deployment workflows
-- 📚 Improving **DSA, databases, and system design**
+- 🎓 B.E. Computer Science – Govt. Engineering College Mosalehosahalli (VTU)  
+- 💻 Interested in **full-stack development** & **backend systems**  
+- 🛡️ Exploring **cybersecurity, honeypots, threat monitoring & analytics**  
+- 🐳 Practicing **Docker** and deployment workflows  
+- 📚 Improving **DSA, databases, and system design**  
 - 🚀 Focused on **real-world, production-style projects**
 
 ---
@@ -44,18 +37,18 @@ src="https://github.com/Ashrithhn/Ashrithhn/blob/main/github-header-banner.png?r
 ## 🚀 Highlight Projects
 
 ### 🔐 Cybersecurity Deception System – Cowrie SSH Honeypot
-- Built a deception-based intrusion monitoring system using **Cowrie SSH honeypot**
-- Captures attacker behavior, commands, credentials, and malware attempts
-- Visualized logs using **Grafana + Loki** for real-time analysis  
+- Built a deception-based intrusion monitoring system using **Cowrie**
+- Captures attacker commands, credentials, and malware attempts
+- Logs visualized using **Grafana + Loki**
 - **Stack:** Python, Kali Linux, Cowrie, Wireshark, Grafana, Loki
 
 ---
 
 ### 💻 CodeHere – Multi-Language Online Code Editor
-- Browser-based editor supporting **C, C++, Python, Java**
-- Secure **real-time code execution** via Node.js backend
-- Monaco-style editor experience  
-- **Stack:** React.js, Node.js, Monaco Editor, HTML, CSS, JavaScript
+- Browser-based editor for **C, C++, Python, Java**
+- Secure real-time execution via **Node.js backend**
+- Monaco-style editing experience
+- **Stack:** React.js, Node.js, Monaco, HTML, CSS, JavaScript
 
 ---
 
@@ -64,7 +57,7 @@ src="https://github.com/Ashrithhn/Ashrithhn/blob/main/github-header-banner.png?r
 - Barcode-based registration & admin dashboard
 - **Stack:** React, Supabase, Firebase Studio, Git
 
-🔗 Portfolio: **https://ashrithhn.github.io/Portfolio/**
+🔗 **Portfolio:** https://ashrithhn.github.io/Portfolio/
 
 ---
 
@@ -102,31 +95,19 @@ src="https://github.com/Ashrithhn/Ashrithhn/blob/main/github-header-banner.png?r
 
 ---
 
-## 📊 GitHub Analytics (Light-Mode Safe)
+📊 GitHub Statistics
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Ashrithhn&show_icons=true&hide_border=true&cache_seconds=1800"/>
-</p>
+<div align="center">
 
-<p align="center">
-  <img src="https://streak-stats.demolab.com?user=Ashrithhn&hide_border=true"/>
-</p>
+![](https://github-readme-stats.vercel.app/api?username=Ashrithhn&theme=github_dark&include_all_commits=true&count_private=false)
 
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ashrithhn&layout=compact&langs_count=8&hide_border=true"/>
-</p>
+![](https://nirzak-streak-stats.vercel.app/?user=Ashrithhn&theme=github_dark)
 
----
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=Ashrithhn&layout=compact&theme=github_dark)
 
-## 📈 Contribution Overview
+</div>
 
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Ashrithhn&theme=default"/>
-</p>
-
-<p align="center">
-  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Ashrithhn&theme=default"/>
-</p>
+[![](https://visitcount.itsvg.in/api?id=Ashrithhn&icon=0&color=0)](https://visitcount.itsvg.in)
 
 ---
 
@@ -136,6 +117,4 @@ src="https://github.com/Ashrithhn/Ashrithhn/blob/main/github-header-banner.png?r
 - Building **production-quality projects**
 - Improving **backend, APIs, and DevOps basics**
 
----
-
-⭐️ Feel free to explore my repositories and connect with me
+⭐️ Feel free to explore my repositories and connect
