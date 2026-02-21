@@ -26,7 +26,7 @@ src="https://github.com/Ashrithhn/Ashrithhn/blob/main/github-header-banner.png?r
 #### ⚡ About Me
 
 - 🎓 B.E. Computer Science – Govt. Engineering College Mosalehosahalli (VTU)  
-- 💻 Interested in **full-stack development** & **backend systems**  
+- 💻 Interested in **full-stack development*** & **backend systems**  
 - 🛡️ Exploring **cybersecurity, honeypots, threat monitoring & analytics**  
 - 🐳 Practicing **Docker** and deployment workflows  
 - 📚 Improving **DSA, databases, and system design**  
