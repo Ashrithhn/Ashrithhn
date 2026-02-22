@@ -111,7 +111,7 @@ src="https://github.com/Ashrithhn/Ashrithhn/blob/main/github-header-banner.png?r
 
 ---
 
-## 🎯 Current Focus
+### 🎯 Current Focus
 
 - Strengthening **DSA, OOP & system design**
 - Building **production-quality projects**
