@@ -2,7 +2,7 @@
 src="https://github.com/Ashrithhn/Ashrithhn/blob/main/github-header-banner.png?raw=1" />
 
 <br><br>
-
+<br><br>
 <h3 align="center">Enthusiastic CSE student building web apps & tools</h3>
 
 <p align="center">
