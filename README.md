@@ -36,7 +36,7 @@ src="https://github.com/Ashrithhn/Ashrithhn/blob/main/github-header-banner.png?r
 
 ### 🚀 Highlight Projects
 
-###🔐 Cybersecurity Deception System – Cowrie SSH Honeypot
+### 🔐 Cybersecurity Deception System – Cowrie SSH Honeypot
 - Built a deception-based intrusion monitoring system using **Cowrie**
 - Captures attacker commands, credentials, and malware attempts
 - Logs visualized using **Grafana + Loki**
