@@ -52,7 +52,7 @@ src="https://github.com/Ashrithhn/Ashrithhn/blob/main/github-header-banner.png?r
 
 ---
 
-### 📱 GLAD-Cell – Event Management Platform
+#### 📱 GLAD-Cell – Event Management Platform
 - Platform for managing **college technical events**
 - Barcode-based registration & admin dashboard
 - **Stack:** React, Supabase, Firebase Studio, Git
