@@ -94,21 +94,40 @@ src="https://github.com/Ashrithhn/Ashrithhn/blob/main/github-header-banner.png?r
 </p>
 
 ---
+---
 
-📊 GitHub Statistics
+## 📊 GitHub Statistics
 
-<div align="center">
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Ashrithhn&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true" height="150"/>
+  <img src="https://streak-stats.demolab.com?user=Ashrithhn&theme=github-dark&hide_border=true" height="150"/>
+</p>
 
-![](https://github-readme-stats.vercel.app/api?username=Ashrithhn&theme=github_dark&include_all_commits=true&count_private=false)
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ashrithhn&layout=compact&theme=github_dark&hide_border=true"/>
+</p>
 
-![](https://nirzak-streak-stats.vercel.app/?user=Ashrithhn&theme=github_dark)
+---
 
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=Ashrithhn&layout=compact&theme=github_dark)
+## 📈 Activity Graph
 
-</div>
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ashrithhn&theme=github-dark&hide_border=true&area=true"/>
+</p>
 
-[![](https://visitcount.itsvg.in/api?id=Ashrithhn&icon=0&color=0)](https://visitcount.itsvg.in)
+---
 
+## ⚡ Productivity Metrics
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Ashrithhn&theme=github_dark"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/most-commit-language?username=Ashrithhn&theme=github_dark"/>
+</p>
+
+<p align="center">
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=Ashrithhn&theme=github_dark"/>
+  <img src="https://github-profile-summary-cards.vercel.app/api/cards/productive-time?username=Ashrithhn&theme=github_dark&utcOffset=5.5"/>
+</p>
 ---
 
 ### 🎯 Current Focus
