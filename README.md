@@ -100,7 +100,7 @@ src="https://github.com/Ashrithhn/Ashrithhn/blob/main/github-header-banner.png?r
 
 <p align="center">
   <img src="https://github-readme-stats.vercel.app/api?username=Ashrithhn&show_icons=true&theme=github_dark&hide_border=true&count_private=true&include_all_commits=true" height="150"/>
-  <img src="https://streak-stats.demolab.com?user=Ashrithhn&theme=github-dark&hide_border=true" height="150"/>
+  <img src="https://github-readme-streak-stats.herokuapp.com?user=Ashrithhn&theme=github-dark&hide_border=true" />
 </p>
 
 <p align="center">
