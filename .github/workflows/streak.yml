@@ -37,19 +37,26 @@ jobs:
                       continue
                   break
 
-          start = (today - timedelta(days=streak-1)).strftime("%b %-d")
-          end = today.strftime("%b %-d")
+          start = (today - timedelta(days=streak-1)).strftime("%b %-d, %Y")
+          end = today.strftime("%b %-d, %Y")
 
-          svg = f'''<svg width="400" height="120" xmlns="http://www.w3.org/2000/svg">
-          <rect width="400" height="120" rx="12" fill="#0d1117"/>
-          <text x="200" y="38" fill="#8b949e" font-family="Arial" font-size="14" text-anchor="middle">Current Streak</text>
-          <text x="200" y="82" fill="#f78166" font-family="Arial" font-size="48" font-weight="bold" text-anchor="middle">{streak}</text>
-          <text x="200" y="105" fill="#8b949e" font-family="Arial" font-size="12" text-anchor="middle">{start} – {end}</text>
+          svg = f'''<svg width="480" height="150" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#161b22"/>
+              <stop offset="100%" stop-color="#0d1117"/>
+            </linearGradient>
+          </defs>
+          <rect width="480" height="150" rx="15" fill="url(#bg)" stroke="#30363d" stroke-width="1"/>
+          <text x="240" y="40" fill="#8b949e" font-family="Segoe UI,Arial,sans-serif" font-size="13" text-anchor="middle" letter-spacing="2">🔥 CURRENT STREAK</text>
+          <text x="240" y="100" fill="#f78166" font-family="Segoe UI,Arial,sans-serif" font-size="58" font-weight="bold" text-anchor="middle">{streak}</text>
+          <text x="240" y="120" fill="#8b949e" font-family="Segoe UI,Arial,sans-serif" font-size="11" text-anchor="middle">DAYS</text>
+          <text x="240" y="142" fill="#484f58" font-family="Segoe UI,Arial,sans-serif" font-size="11" text-anchor="middle">{start} – {end}</text>
           </svg>'''
 
           with open("streak.svg", "w") as f:
               f.write(svg)
-          print(f"Streak: {streak} days ({start} - {end})")
+          print(f"Streak: {streak} days")
           EOF
 
       - name: Commit
