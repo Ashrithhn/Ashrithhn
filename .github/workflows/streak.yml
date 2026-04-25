@@ -11,11 +11,10 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v4
-      - name: Calculate and generate streak SVG
+      - name: Generate streak SVG
         run: |
           python3 << 'EOF'
-          import urllib.request
-          import json
+          import urllib.request, json
           from datetime import date, timedelta
 
           url = "https://github-contributions-api.jogruber.de/v4/Ashrithhn?y=last"
@@ -35,22 +34,22 @@ jobs:
               else:
                   if d == today:
                       d -= timedelta(days=1)
-                      ds = d.strftime("%Y-%m-%d")
-                      if contribs.get(ds, 0) > 0:
-                          streak += 1
-                          d -= timedelta(days=1)
-                          continue
+                      continue
                   break
 
-          svg = f'''<svg width="400" height="100" xmlns="http://www.w3.org/2000/svg">
-          <rect width="400" height="100" rx="10" fill="#0d1117"/>
-          <text x="200" y="35" fill="#adbac7" font-family="Arial" font-size="13" text-anchor="middle">Current Streak</text>
-          <text x="200" y="72" fill="#f78166" font-family="Arial" font-size="40" font-weight="bold" text-anchor="middle">{streak} days</text>
+          start = (today - timedelta(days=streak-1)).strftime("%b %-d")
+          end = today.strftime("%b %-d")
+
+          svg = f'''<svg width="400" height="120" xmlns="http://www.w3.org/2000/svg">
+          <rect width="400" height="120" rx="12" fill="#0d1117"/>
+          <text x="200" y="38" fill="#8b949e" font-family="Arial" font-size="14" text-anchor="middle">Current Streak</text>
+          <text x="200" y="82" fill="#f78166" font-family="Arial" font-size="48" font-weight="bold" text-anchor="middle">{streak}</text>
+          <text x="200" y="105" fill="#8b949e" font-family="Arial" font-size="12" text-anchor="middle">{start} – {end}</text>
           </svg>'''
 
           with open("streak.svg", "w") as f:
               f.write(svg)
-          print(f"Streak: {streak} days")
+          print(f"Streak: {streak} days ({start} - {end})")
           EOF
 
       - name: Commit
