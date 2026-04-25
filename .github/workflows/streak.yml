@@ -22,8 +22,11 @@ jobs:
               data = json.loads(r.read())
 
           contribs = {d["date"]: d["count"] for d in data["contributions"]}
+          total = sum(d["count"] for d in data["contributions"])
 
           today = date.today()
+
+          # Current streak
           streak = 0
           d = today
           while True:
@@ -36,27 +39,65 @@ jobs:
                       d -= timedelta(days=1)
                       continue
                   break
+          streak_start = (today - timedelta(days=streak - 1)).strftime("%b %-d, %Y")
+          streak_end = today.strftime("%b %-d, %Y")
 
-          start = (today - timedelta(days=streak-1)).strftime("%b %-d, %Y")
-          end = today.strftime("%b %-d, %Y")
+          # Longest streak
+          longest = 0
+          cur = 0
+          long_start_tmp = None
+          long_start = None
+          long_end = None
+          prev_date = None
+          for entry in data["contributions"]:
+              ed = date.fromisoformat(entry["date"])
+              if entry["count"] > 0:
+                  if prev_date and (ed - prev_date).days == 1:
+                      cur += 1
+                  else:
+                      cur = 1
+                      long_start_tmp = ed
+                  if cur > longest:
+                      longest = cur
+                      long_start = long_start_tmp
+                      long_end = ed
+              prev_date = ed
+          long_start_str = long_start.strftime("%b %-d, %Y") if long_start else ""
+          long_end_str = long_end.strftime("%b %-d, %Y") if long_end else ""
 
-          svg = f'''<svg width="480" height="150" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-              <stop offset="0%" stop-color="#161b22"/>
-              <stop offset="100%" stop-color="#0d1117"/>
-            </linearGradient>
-          </defs>
-          <rect width="480" height="150" rx="15" fill="url(#bg)" stroke="#30363d" stroke-width="1"/>
-          <text x="240" y="40" fill="#8b949e" font-family="Segoe UI,Arial,sans-serif" font-size="13" text-anchor="middle" letter-spacing="2">🔥 CURRENT STREAK</text>
-          <text x="240" y="100" fill="#f78166" font-family="Segoe UI,Arial,sans-serif" font-size="58" font-weight="bold" text-anchor="middle">{streak}</text>
-          <text x="240" y="120" fill="#8b949e" font-family="Segoe UI,Arial,sans-serif" font-size="11" text-anchor="middle">DAYS</text>
-          <text x="240" y="142" fill="#484f58" font-family="Segoe UI,Arial,sans-serif" font-size="11" text-anchor="middle">{start} – {end}</text>
+          first = next((d["date"] for d in data["contributions"] if d["count"] > 0), "")
+          first_str = date.fromisoformat(first).strftime("%b %-d, %Y") if first else ""
+
+          svg = f'''<svg width="600" height="170" xmlns="http://www.w3.org/2000/svg">
+          <rect width="600" height="170" rx="12" fill="#0d1117" stroke="#21262d" stroke-width="1"/>
+
+          <!-- Dividers -->
+          <line x1="200" y1="20" x2="200" y2="150" stroke="#21262d" stroke-width="1"/>
+          <line x1="400" y1="20" x2="400" y2="150" stroke="#21262d" stroke-width="1"/>
+
+          <!-- Total Contributions -->
+          <text x="100" y="55" fill="#58a6ff" font-family="Segoe UI,Arial,sans-serif" font-size="32" font-weight="bold" text-anchor="middle">{total}</text>
+          <text x="100" y="80" fill="#8b949e" font-family="Segoe UI,Arial,sans-serif" font-size="12" text-anchor="middle">Total Contributions</text>
+          <text x="100" y="115" fill="#3fb950" font-family="Segoe UI,Arial,sans-serif" font-size="11" text-anchor="middle">{first_str}</text>
+          <text x="100" y="130" fill="#3fb950" font-family="Segoe UI,Arial,sans-serif" font-size="11" text-anchor="middle">– Present</text>
+
+          <!-- Current Streak (middle, bigger) -->
+          <text x="300" y="42" fill="#3fb950" font-family="Segoe UI,Arial,sans-serif" font-size="11" text-anchor="middle">🔥</text>
+          <text x="300" y="72" fill="#3fb950" font-family="Segoe UI,Arial,sans-serif" font-size="42" font-weight="bold" text-anchor="middle">{streak}</text>
+          <text x="300" y="95" fill="#8b949e" font-family="Segoe UI,Arial,sans-serif" font-size="12" text-anchor="middle">Current Streak</text>
+          <text x="300" y="118" fill="#3fb950" font-family="Segoe UI,Arial,sans-serif" font-size="11" text-anchor="middle">{streak_start}</text>
+          <text x="300" y="133" fill="#3fb950" font-family="Segoe UI,Arial,sans-serif" font-size="11" text-anchor="middle">– {streak_end}</text>
+
+          <!-- Longest Streak -->
+          <text x="500" y="55" fill="#58a6ff" font-family="Segoe UI,Arial,sans-serif" font-size="32" font-weight="bold" text-anchor="middle">{longest}</text>
+          <text x="500" y="80" fill="#8b949e" font-family="Segoe UI,Arial,sans-serif" font-size="12" text-anchor="middle">Longest Streak</text>
+          <text x="500" y="115" fill="#3fb950" font-family="Segoe UI,Arial,sans-serif" font-size="11" text-anchor="middle">{long_start_str}</text>
+          <text x="500" y="130" fill="#3fb950" font-family="Segoe UI,Arial,sans-serif" font-size="11" text-anchor="middle">– {long_end_str}</text>
           </svg>'''
 
           with open("streak.svg", "w") as f:
               f.write(svg)
-          print(f"Streak: {streak} days")
+          print(f"Total: {total} | Current streak: {streak} | Longest: {longest}")
           EOF
 
       - name: Commit
