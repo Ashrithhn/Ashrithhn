@@ -1,4 +1,4 @@
-<img align="right" width="1600" height="400" alt="coding"
+ <img align="right" width="1600" height="400" alt="coding"
 src="https://github.com/Ashrithhn/Ashrithhn/blob/main/github-header-banner.png?raw=1" />
 
 <br><br>
