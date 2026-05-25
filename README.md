@@ -3,7 +3,7 @@ src="https://github.com/Ashrithhn/Ashrithhn/blob/main/github-header-banner.png?r
 
 <br><br>
 <br><br>
-<h3 align="center">Enthusiastic CSE student building web apps & tools</h3>
+<h3 align="cenTer">Enthusiastic CSE student building web apps & tools</h3>
 
 <p align="center">
   <a href="mailto:ashrith.sringeri@gmail.com">
